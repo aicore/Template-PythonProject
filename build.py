@@ -9,7 +9,7 @@ use_plugin("python.distutils")
 use_plugin("python.install_dependencies")
 
 
-name = "cloudLedger"
+name = "Template-PythonProject"
 default_task = "publish"
 
 
