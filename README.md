@@ -3,8 +3,8 @@ Cloud pieces for temple
 
 ## Building and testing
 ### Prerequisites
-* Very that Python-3 and pip3 should be installed in your system. terminal>`pip3 -V`
-* Install pyb:  `pip install pybuilder`
+* Verify that Python-3 and pip3 should be installed in your system. terminal>`pip3 -V`
+* Install pyb:  `pip3 install pybuilder`
 * Verify Pyb  installation :`pyb --version`
 
 ### To build,clean and run tests, use the following command:
