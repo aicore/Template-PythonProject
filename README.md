@@ -1,5 +1,5 @@
-# CloudLedger
-Cloud pieces for temple
+# Python template
+  Click on the *Use This Template* button in the GitHub page above to  create a brand new python project with built in build and unit test system enabled.
 
 ## Building and testing
 ### Prerequisites
