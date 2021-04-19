@@ -1,5 +1,6 @@
 # Python template
-  Click on the [this link / Use This Template](https://github.com/aicore/Template-PythonProject/generate) button in the GitHub page above to  create a brand new python project with built in build and unit test system enabled.
+  * Click on [this link / Use This Template](https://github.com/aicore/Template-PythonProject/generate) button in the GitHub page above to  create a brand new python project with built in build and unit test system enabled.
+  * **TODO**: Edit this file for each project you create.
 
 ## Building and testing
 ### Prerequisites
