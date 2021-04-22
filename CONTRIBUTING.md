@@ -19,7 +19,8 @@ TODO: Edit this file for each project you create.
 This is a template repository that enables you to create python projects in a single click from GitHub.
 
 ## Project Status
-* Current
+* One of Alpha/beta/Release Candidate/ Live/ Deprecated.
+* Decribe why the above status and timelines if any.
 
 # Getting Started
 * see https://github.com/aicore/Template-PythonProject/blob/main/README.md
