@@ -38,5 +38,9 @@ pyb -v
 * Tutorial: https://pybuilder.io/documentation/tutorial
 * To make changes to build scripts see this: https://pythonhosted.org/pybuilder/walkthrough-new.html
 
-## IDE setup
-* [Pycharm/intellij](https://www.jetbrains.com/pycharm/) support is present in source. `.idea` files are avilable when you clone this repo. Just open the folder in pycharm.
+## IDE/Editor setup
+### [Pycharm/intellij](https://www.jetbrains.com/pycharm/) 
+ Support is present in source. `.idea` files are avilable when you clone this repo. Just open the folder in pycharm.
+### Vim
+* Vim's config file is usually located in `~/.vimrc` . Locate the Vim rc file.
+* create/Append the file with this [config file](https://github.com/aicore/Template-PythonProject/blob/main/ideconfig/vimrc).
