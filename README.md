@@ -44,3 +44,29 @@ pyb -v
 ### Vim
 * Vim's config file is usually located in `~/.vimrc` . Locate the Vim rc file.
 * create/Append the file with this [config file](https://github.com/aicore/Template-PythonProject/blob/main/ideconfig/vimrc).
+
+## Project structure
+* Use `src/main/python/<module>` to add your python module.
+* Write unit tests in `src/unittest/` directory mirroring the same module structure in `src/main` directory.
+* The build artifacts can be found in `target` directory.
+
+## Adding dependencies
+* Dependencies are managed through the build.py file.
+* Refer https://pybuilder.io/documentation/plugins#installing-dependencies to see how this can be done.
+* After updating dependencies, run the following command.
+```shell
+ pyb install_dependencies
+```
+
+## Writing tests
+* Write unit tests in `src/unittest/` directory mirroring the same module structure in `src/main` directory.
+* Use One of the two below supported testing suites.
+  - Python unit test framework : https://docs.python.org/3/library/unittest.html
+  - Mockito spying framewrk, see docs: https://mockito-python.readthedocs.io/en/latest/
+
+Follow the above two links on details on how to write tests.
+
+### Running tests with coverage
+* `pyb -v` runs unit tests as part of every build
+* Default coverage is set to 70%. To change the defaults, see https://pybuilder.io/documentation/plugins#measuring-unittest-coverage 
+
