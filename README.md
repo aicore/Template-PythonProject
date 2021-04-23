@@ -7,6 +7,15 @@
 * Verify that Python-3 and pip3 should be installed in your system. terminal>`pip3 -V`
 * Install pyb:  `pip3 install pybuilder`
 * Verify Pyb  installation :`pyb --version`
+```shell
+# If pyb command is not found, you will have to add pyb to path.
+# follow these instructions to add pyb to path.
+
+# for ubuntu/bash:
+> echo 'export PATH=$PATH:/<path/to/pyb/bin>' >> ~/.bashrc
+# this is usually /home/<home folder>/.local/bin 
+> source ~/.bashrc
+```
 
 ### To build,clean and run tests, use the following command:
 #### Build and test
