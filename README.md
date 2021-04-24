@@ -70,3 +70,7 @@ Follow the above two links on details on how to write tests.
 * `pyb -v` runs unit tests as part of every build
 * Default coverage is set to 70%. To change the defaults, see https://pybuilder.io/documentation/plugins#measuring-unittest-coverage 
 
+## Credits
+* We use pybuilder as the build tool.
+* https://www.youtube.com/watch?v=iQU18hAjux4&
+
