@@ -1,0 +1,28 @@
+name: Github actions to verify build as part of each pull request/commit.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    python-version: '3.8'
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+    - name: Install pybuilder
+      run: |
+        pip install pybuilder
+    - name: pyb installing dependencies
+      run: |
+        pyb install_dependencies
+    - name: To run python build with tests and coverage
+      run: |
+        pyb -v
