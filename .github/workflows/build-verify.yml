@@ -1,4 +1,4 @@
-name: Github actions to verify build as part of each pull request/commit.
+name: Running Build and test
 
 on:
   pull_request:
