@@ -8,15 +8,16 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-    python-version: '3.8'
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
     - name: Install pybuilder
       run: |
         pip install pybuilder
