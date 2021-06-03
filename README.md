@@ -38,6 +38,20 @@ pyb -v
 * Tutorial: https://pybuilder.io/documentation/tutorial
 * To make changes to build scripts see this: https://pythonhosted.org/pybuilder/walkthrough-new.html
 
+### Running Python Lint Checks 
+* This project uses Flake8 as the default linter for coding style enforcement.  
+* Refer https://flake8.pycqa.org/en/latest/ for more details.
+* Before raising a pull request contributors are advised to run the below command locally to ensure there are no Flake8 warnings.
+```shell
+ pyb analyze
+```
+* Please ensure build passes on running the above command without any warnings. Examples of Flake 8 warnings shown below:
+```shell
+E501 line too long (125 > 120 characters)
+F403 'from local_settings import *' used; unable to detect undefined names
+F401 'django.contrib.auth.views as auth_views' imported but unused
+```
+
 ## IDE/Editor setup
 ### [Pycharm/intellij](https://www.jetbrains.com/pycharm/) 
  Support is present in source. `.idea` files are avilable when you clone this repo. Just open the folder in pycharm.
@@ -73,4 +87,3 @@ Follow the above two links on details on how to write tests.
 ## Credits
 * We use pybuilder as the build tool.
 * https://www.youtube.com/watch?v=iQU18hAjux4&
-

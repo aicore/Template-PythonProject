@@ -27,3 +27,6 @@ jobs:
     - name: To run python build with tests and coverage
       run: |
         pyb -v
+    - name: To run Flake8 for lint checks
+      run: |
+        pyb analyze
