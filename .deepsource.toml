@@ -6,3 +6,16 @@ enabled = true
 
   [analyzers.meta]
   runtime_version = "3.x.x"
+
+exclude_patterns = [
+  ".github/**",
+  "ideconfig/**",
+  ".gitignore",
+  "README.md",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
+  "LICENSE",
+  "pyproject.toml",
+  "build.py",
+  "setup.py"
+]
