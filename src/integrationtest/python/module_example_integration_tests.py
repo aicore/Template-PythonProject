@@ -1,18 +1,19 @@
-import urllib.request
+import http.client
 import unittest
 
 
 class Test(unittest.TestCase):
+
     """Class contain different integrtion test cases"""
 
     # noinspection PyMethodMayBeStatic
     @staticmethod
     def test_sample():
         """Makes an http call and checks the status code"""
-        weburl = urllib.request.Request('https://www.google.com/')
-        with urllib.request.urlopen(weburl) as response:
-            code = response.getcode()
-        if code != 200:
+        conn = http.client.HTTPSConnection("www.google.com")
+        conn.request("GET", "/")
+        response = conn.getresponse()
+        if response.status != 200:
             raise AssertionError
 
 
