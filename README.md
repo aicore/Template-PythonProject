@@ -24,6 +24,10 @@ pyb install_dependencies
 # Pyb should work without pyb install_dependencies, but unfortunately it doesnt.
 # See details: here https://github.com/pybuilder/pybuilder/issues/727 
 pyb -v
+# To skip integration tests during build use the below command
+pyb -x run_integration_tests
+# To run only integration tests use the below command
+pyb run_integration_tests -x run_unit_tests
 ```
 * That's all you need to build the project.
 * Details about Test failures if any can be found in file `target\reports\unittest`
