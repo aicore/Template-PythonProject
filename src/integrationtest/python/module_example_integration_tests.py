@@ -14,5 +14,6 @@ class Test(unittest.TestCase):
         if response.status_code != 200:
             raise AssertionError
 
+
 if __name__ == "__main__":
     unittest.main()
