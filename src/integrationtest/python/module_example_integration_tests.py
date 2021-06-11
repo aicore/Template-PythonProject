@@ -3,7 +3,6 @@ import unittest
 
 
 class Test(unittest.TestCase):
-
     """Class contain different integration test cases"""
 
     # noinspection PyMethodMayBeStatic
