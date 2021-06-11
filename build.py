@@ -27,4 +27,5 @@ def set_properties(project):
     project.set_property("flake8_include_test_sources", True)
     project.set_property("flake8_include_scripts", True)
     # Property for integration test to work on Windows
+    # see https://github.com/pybuilder/pybuilder/issues/414
     project.set_property("integrationtest_inherit_environment", True)

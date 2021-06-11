@@ -24,14 +24,18 @@ pyb install_dependencies
 # Pyb should work without pyb install_dependencies, but unfortunately it doesnt.
 # See details: here https://github.com/pybuilder/pybuilder/issues/727 
 pyb -v
+```
+* That's all you need to build the project.
+* Details about Test failures if any can be found in file `target\reports\unittest`
+* The binary artifacts will be available in the target folder.
+#### Running Integration Tests
+```shell
 # To skip integration tests during build use the below command
 pyb -x run_integration_tests
 # To run only integration tests use the below command
 pyb run_integration_tests -x run_unit_tests
 ```
-* That's all you need to build the project.
-* Details about Test failures if any can be found in file `target\reports\unittest`
-* The binary artifacts will be available in the target folder.
+
 #### Clean builds :
 * > pyb clean
   
@@ -83,6 +87,11 @@ F401 'django.contrib.auth.views as auth_views' imported but unused
   - Mockito spying framewrk, see docs: https://mockito-python.readthedocs.io/en/latest/
 
 Follow the above two links on details on how to write tests.
+
+## Writing integration tests
+* Write integration tests in `src/integrationtest/python/` directory.
+* Integration test file names should end with `_tests.py`.
+* Refer https://pybuilder.io/documentation/plugins#running-python-integration-tests for more details.
 
 ### Running tests with coverage
 * `pyb -v` runs unit tests as part of every build
