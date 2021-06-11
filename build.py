@@ -16,6 +16,7 @@ default_task = "publish"
 @init
 def set_properties(project):
     project.build_depends_on("mockito")
+    project.depends_on("requests")
     project.set_property("coverage_threshold_warn", 90)
     project.set_property("coverage_branch_threshold_warn", 80)
     project.set_property("coverage_branch_partial_threshold_warn", 80)
@@ -25,4 +26,5 @@ def set_properties(project):
     project.set_property("flake8_break_build", True)
     project.set_property("flake8_include_test_sources", True)
     project.set_property("flake8_include_scripts", True)
+    # Property for integration test to work on Windows
     project.set_property("integrationtest_inherit_environment", True)
