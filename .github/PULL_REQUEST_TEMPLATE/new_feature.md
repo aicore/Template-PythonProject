@@ -1,27 +1,38 @@
+---
+name: New Feature
+about: Change which adds functionality
+title: ''
+labels: ''
+assignees: ''
+---
+
 # Description
 
-* Please include a summary of the change and which issue is addressed. 
+* Please include a summary of the change. 
 * Please also include relevant motivation and context. 
 * List any dependencies that are required for this change.
 
-Fixes # (issue)
+Fixes #(issue)
 
 ## Type of change
-
-Please delete options that are not relevant.
-
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+**NB: ~~Please strike through options that are not applicable.~~**
+- [ ] non-breaking change which fixes an issue
+- [ ] Breaking change (feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
 # Sample Input and output
 * Provide screenshots or videos.
-* Or provide Input output if run on text terminal.
+* Or provide code block Input output if run on text terminal as below.
+```
+  $ code block Input output on text terminal.
+  output
+```
 
 # How Has This Been Tested?
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
+* Please describe the tests that you ran to verify your changes. 
+* Provide instructions so we can reproduce. 
+* Please also list any relevant details for your test configuration
 
 - [ ] Test A
 - [ ] Test B
@@ -34,7 +45,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 # Checklist:
 
-Add N/A to items thata re not applicanble.
+**NB: ~~Please strike through options that are not applicable.~~**
 
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
